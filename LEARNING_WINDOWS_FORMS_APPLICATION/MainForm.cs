@@ -25,6 +25,8 @@
 
 			if (enmResult == System.Windows.Forms.DialogResult.Yes)
 			{
+				//Close();
+
 				System.Windows.Forms.Application.Exit();
 			}
 		}
