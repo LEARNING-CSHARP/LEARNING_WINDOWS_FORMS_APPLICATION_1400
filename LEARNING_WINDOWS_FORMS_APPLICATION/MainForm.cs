@@ -13,6 +13,10 @@
 
 		private void exitToolStripMenuItem_Click(object sender, System.EventArgs e)
 		{
+			//Close();
+
+			//System.Windows.Forms.Application.Exit();
+
 			System.Windows.Forms.DialogResult result =
 				System.Windows.Forms.MessageBox.Show
 				(text: "آیا به خروج از برنامه اطمینان دارید؟",
@@ -25,8 +29,6 @@
 
 			if (result == System.Windows.Forms.DialogResult.Yes)
 			{
-				//Close();
-
 				System.Windows.Forms.Application.Exit();
 			}
 		}

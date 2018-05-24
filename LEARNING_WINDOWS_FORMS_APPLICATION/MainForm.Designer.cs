@@ -23,7 +23,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
+			this.myMainMenuStrip = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,20 +50,20 @@
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
-			this.mainMenuStrip.SuspendLayout();
+			this.myMainMenuStrip.SuspendLayout();
 			this.mainContextMenuStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// mainMenuStrip
+			// myMainMenuStrip
 			// 
-			this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.myMainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem});
-			this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
-			this.mainMenuStrip.Name = "mainMenuStrip";
-			this.mainMenuStrip.Size = new System.Drawing.Size(570, 24);
-			this.mainMenuStrip.TabIndex = 0;
-			this.mainMenuStrip.Text = "menuStrip1";
+			this.myMainMenuStrip.Location = new System.Drawing.Point(0, 0);
+			this.myMainMenuStrip.Name = "myMainMenuStrip";
+			this.myMainMenuStrip.Size = new System.Drawing.Size(570, 24);
+			this.myMainMenuStrip.TabIndex = 0;
+			this.myMainMenuStrip.Text = "menuStrip1";
 			// 
 			// fileToolStripMenuItem
 			// 
@@ -274,16 +274,16 @@
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.mainMenuStrip);
+			this.Controls.Add(this.myMainMenuStrip);
 			this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MainMenuStrip = this.mainMenuStrip;
+			this.MainMenuStrip = this.myMainMenuStrip;
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
 			this.Load += new System.EventHandler(this.MainForm_Load);
-			this.mainMenuStrip.ResumeLayout(false);
-			this.mainMenuStrip.PerformLayout();
+			this.myMainMenuStrip.ResumeLayout(false);
+			this.myMainMenuStrip.PerformLayout();
 			this.mainContextMenuStrip.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -292,7 +292,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.MenuStrip mainMenuStrip;
+		private System.Windows.Forms.MenuStrip myMainMenuStrip;
 		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
