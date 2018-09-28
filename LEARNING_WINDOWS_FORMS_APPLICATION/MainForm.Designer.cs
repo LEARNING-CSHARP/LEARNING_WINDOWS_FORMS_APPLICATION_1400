@@ -23,7 +23,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.myMainMenuStrip = new System.Windows.Forms.MenuStrip();
+			this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,20 +50,23 @@
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
-			this.myMainMenuStrip.SuspendLayout();
+			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
+			this.welcomeToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.mainMenuStrip.SuspendLayout();
 			this.mainContextMenuStrip.SuspendLayout();
+			this.mainStatusStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// myMainMenuStrip
+			// mainMenuStrip
 			// 
-			this.myMainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem});
-			this.myMainMenuStrip.Location = new System.Drawing.Point(0, 0);
-			this.myMainMenuStrip.Name = "myMainMenuStrip";
-			this.myMainMenuStrip.Size = new System.Drawing.Size(570, 24);
-			this.myMainMenuStrip.TabIndex = 0;
-			this.myMainMenuStrip.Text = "menuStrip1";
+			this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
+			this.mainMenuStrip.Name = "mainMenuStrip";
+			this.mainMenuStrip.Size = new System.Drawing.Size(570, 24);
+			this.mainMenuStrip.TabIndex = 0;
+			this.mainMenuStrip.Text = "menuStrip1";
 			// 
 			// fileToolStripMenuItem
 			// 
@@ -263,28 +266,47 @@
 			this.button5.Text = "button5";
 			this.button5.UseVisualStyleBackColor = true;
 			// 
+			// mainStatusStrip
+			// 
+			this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.welcomeToolStripStatusLabel});
+			this.mainStatusStrip.Location = new System.Drawing.Point(0, 404);
+			this.mainStatusStrip.Name = "mainStatusStrip";
+			this.mainStatusStrip.Size = new System.Drawing.Size(570, 22);
+			this.mainStatusStrip.TabIndex = 6;
+			this.mainStatusStrip.Text = "statusStrip1";
+			// 
+			// welcomeToolStripStatusLabel
+			// 
+			this.welcomeToolStripStatusLabel.Name = "welcomeToolStripStatusLabel";
+			this.welcomeToolStripStatusLabel.Size = new System.Drawing.Size(32, 17);
+			this.welcomeToolStripStatusLabel.Text = "-----";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(570, 426);
+			this.Controls.Add(this.mainStatusStrip);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.myMainMenuStrip);
+			this.Controls.Add(this.mainMenuStrip);
 			this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MainMenuStrip = this.myMainMenuStrip;
+			this.MainMenuStrip = this.mainMenuStrip;
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
 			this.Load += new System.EventHandler(this.MainForm_Load);
-			this.myMainMenuStrip.ResumeLayout(false);
-			this.myMainMenuStrip.PerformLayout();
+			this.mainMenuStrip.ResumeLayout(false);
+			this.mainMenuStrip.PerformLayout();
 			this.mainContextMenuStrip.ResumeLayout(false);
+			this.mainStatusStrip.ResumeLayout(false);
+			this.mainStatusStrip.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -292,7 +314,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.MenuStrip myMainMenuStrip;
+		private System.Windows.Forms.MenuStrip mainMenuStrip;
 		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
@@ -319,5 +341,7 @@
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.StatusStrip mainStatusStrip;
+		private System.Windows.Forms.ToolStripStatusLabel welcomeToolStripStatusLabel;
 	}
 }

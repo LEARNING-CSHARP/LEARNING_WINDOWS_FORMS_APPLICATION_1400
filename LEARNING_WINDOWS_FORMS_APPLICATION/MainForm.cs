@@ -9,6 +9,7 @@
 
 		private void MainForm_Load(object sender, System.EventArgs e)
 		{
+			welcomeToolStripStatusLabel.Text = "Welcome Dariush Tasdighi";
 		}
 
 		private void exitToolStripMenuItem_Click(object sender, System.EventArgs e)
