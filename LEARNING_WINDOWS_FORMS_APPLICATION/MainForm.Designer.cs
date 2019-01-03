@@ -52,6 +52,11 @@
 			this.button5 = new System.Windows.Forms.Button();
 			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
 			this.welcomeToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.button6 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
+			this.button8 = new System.Windows.Forms.Button();
+			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+			this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
 			this.mainMenuStrip.SuspendLayout();
 			this.mainContextMenuStrip.SuspendLayout();
 			this.mainStatusStrip.SuspendLayout();
@@ -279,8 +284,42 @@
 			// welcomeToolStripStatusLabel
 			// 
 			this.welcomeToolStripStatusLabel.Name = "welcomeToolStripStatusLabel";
-			this.welcomeToolStripStatusLabel.Size = new System.Drawing.Size(32, 17);
-			this.welcomeToolStripStatusLabel.Text = "-----";
+			this.welcomeToolStripStatusLabel.Size = new System.Drawing.Size(103, 17);
+			this.welcomeToolStripStatusLabel.Text = "Welcome Dariush!";
+			// 
+			// button6
+			// 
+			this.button6.Location = new System.Drawing.Point(93, 27);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(75, 23);
+			this.button6.TabIndex = 7;
+			this.button6.Text = "button6";
+			this.button6.UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this.button7.Location = new System.Drawing.Point(93, 56);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(75, 23);
+			this.button7.TabIndex = 8;
+			this.button7.Text = "button7";
+			this.toolTip1.SetToolTip(this.button7, "Hello World!");
+			this.button7.UseVisualStyleBackColor = true;
+			// 
+			// button8
+			// 
+			this.button8.Location = new System.Drawing.Point(93, 85);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(75, 23);
+			this.button8.TabIndex = 9;
+			this.button8.Text = "button8";
+			this.toolTip1.SetToolTip(this.button8, "Hello, World!");
+			this.toolTip2.SetToolTip(this.button8, "Dariush");
+			this.button8.UseVisualStyleBackColor = true;
+			// 
+			// toolTip2
+			// 
+			this.toolTip2.IsBalloon = true;
 			// 
 			// MainForm
 			// 
@@ -288,6 +327,9 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(570, 426);
+			this.Controls.Add(this.button8);
+			this.Controls.Add(this.button7);
+			this.Controls.Add(this.button6);
 			this.Controls.Add(this.mainStatusStrip);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
@@ -343,5 +385,10 @@
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.StatusStrip mainStatusStrip;
 		private System.Windows.Forms.ToolStripStatusLabel welcomeToolStripStatusLabel;
+		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button button7;
+		private System.Windows.Forms.ToolTip toolTip1;
+		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.ToolTip toolTip2;
 	}
 }
