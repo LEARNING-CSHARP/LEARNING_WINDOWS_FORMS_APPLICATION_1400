@@ -317,6 +317,10 @@
 			this.toolTip2.SetToolTip(this.button8, "Dariush");
 			this.button8.UseVisualStyleBackColor = true;
 			// 
+			// toolTip1
+			// 
+			this.toolTip1.ToolTipTitle = "Note";
+			// 
 			// toolTip2
 			// 
 			this.toolTip2.IsBalloon = true;
